@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TopicoRepository extends JpaRepository<Topico, Long> {
     Page<Topico> findByCursoNome(String nomeCurso, Pageable paginacao);
-   /* @Query("SELECT t from Topico t where t.curso.nome = :nomeCurso")
+
+    /* @Query("SELECT t from Topico t where t.curso.nome = :nomeCurso")
     List<Topico> carregarPorNomeDoCurso(@Param("nomeCurso") String nomeCurso);*/
 }

@@ -16,6 +16,7 @@ public class TokenService {
     @Value("${forum.jwt.expiration}")
     private String expiration;
 
+    //não sei usar isso
     @Value("${forum.jwt.secret}")
     private String secret;
 
