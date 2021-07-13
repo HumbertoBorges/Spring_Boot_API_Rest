@@ -31,6 +31,7 @@ public class TopicosController {
     private TopicoRepository topicoRepository;
     @Autowired
     private CursoRepository cursoRepository;
+    private Topico topico;
 
     @GetMapping
     @Cacheable(value = "listaDeTopicos")
